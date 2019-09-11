@@ -1,0 +1,138 @@
+/* body {
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.save-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.submit-button {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+#company-name {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#job-title {
+    font-size: 1.3em;
+}
+
+#job-type {
+    font-size: 1.1em;
+}
+
+#job-location, #company-logo {
+    margin-bottom: 30px;
+}
+
+#job-description {
+    line-height: 30px;
+} */
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+.container-fluid {
+    padding: 15px;
+    
+    background-color: black;
+}
+
+.navbar {
+    background-image: linear-gradient(rgb(98, 129, 111),rgb(131, 122, 106));
+    border: double white 4px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+    margin-bottom: 0px;
+    color: rgb(22, 21, 21);
+}
+
+body {
+    background-color: black;
+}
+
+td {
+    background-image: linear-gradient(rgb(98, 129, 111),rgb(131, 122, 106));
+}
+
+table {
+    border: solid white 4px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.search_button1 {
+    width: 10%;
+    background-image: linear-gradient(to bottom, #aaa8a8, #646464);
+    color: black;
+    border: solid white 2px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.search_button1:hover {
+    border: solid black 2px;
+    font-family: "Pacifico", cursive;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #706e6e, #262627);
+    color: #f3f3f3;
+    border-color: black;
+    /* font-family: "Pacifico", cursive; */
+}
+
+#signUp {
+    background-image: linear-gradient(to bottom, #aaa8a8, #646464);
+    color: black;
+    border: solid white 2px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+#signUp:hover {
+    background-image: linear-gradient(to bottom, #706e6e, #262627);
+    color: #f3f3f3;
+    border-color: black;
+    font-family: "Pacifico", cursive;
+}
+
+tr, tbody{
+    border: solid black 2px;
+}
+
+#searchResults {
+    border: solid black 1px;
+}
+
+tbody {
+    max-width: 95%;
+}
+
+th {
+    
+    font-weight: bold;
+    background-image: linear-gradient(rgb(98, 129, 111),rgb(131, 122, 106));
+    color: black;
+}
+
+#magnify {
+    height: 40px;
+    width: auto;
+}
