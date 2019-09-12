@@ -1,23 +1,20 @@
-var express = require("express");
+//dependencies//
+let express = require("express");
 
-var PORT = process.env.PORT || 8080;
+//set up the express app//
+let app = express();
+let PORT = process.env.PORT || 8080;
 
-var app = express();
-
+//set up express app to handle data parsing//
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
 app.use(express.static("public"));
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+//set up route files//
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
-var exphbs = require("express-handlebars");
-
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
-
-var routes = require("./controllers/recipe_controller.js");
-
-app.use(routes);
-
+//set up listener, initialize server//
 app.listen(PORT, function() {
-  console.log("Server listening on: http://localhost:" + PORT);
-});
+    console.log("App is listening on PORT: " + PORT);
+})
